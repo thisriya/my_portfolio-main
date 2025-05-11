@@ -16,7 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
     <!-- Tailwind CSS via CDN (for demo purposes) -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -63,7 +67,7 @@
         
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex items-center gap-8">
-          <li><a class="text-gray-dark font-medium hover:text-primary" href="#projects">My Websites</a></li>
+          <li><a class="text-gray-dark font-medium hover:text-primary" href="#projects">Mini Projects</a></li>
           <li><a class="text-gray-dark font-medium hover:text-primary" href="#education">Education</a></li>
           <li><a class="text-gray-dark font-medium hover:text-primary" href="#python-projects">Python projects</a></li>
           <li><a class="bg-primary hover:bg-primary-shade text-white px-6 py-3 rounded-full transition-colors duration-300" href="#experience">Experience</a></li>
@@ -104,7 +108,7 @@
             </div>
             
             <div class="flex items-center gap-4">
-              <div class="flex -space-x-2">
+              <div class="flex space-x-2">
                 <ion-icon class="text-3xl text-orange-500" name="logo-html5"></ion-icon>
                 <ion-icon class="text-3xl text-blue-500" name="logo-css3"></ion-icon>
                 <ion-icon class="text-3xl text-yellow-500" name="logo-javascript"></ion-icon>
@@ -443,51 +447,28 @@
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-16">
-      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
         <!-- Logo Column -->
-        <div>
-          <ul class="flex gap-4 mb-6">
-            <li>
-              <a class="inline-block hover:text-primary transition-colors" href="https://github.com/thisriya">
-                <img src="GitHub-Symbol.png" class="w-8 h-8 object-contain" alt="GitHub"/>
-              </a> 
-            </li> 
-            <li>
-              <a class="inline-block hover:text-primary transition-colors" href="https://www.linkedin.com/in/riya-singh-8354b424a">
-                <ion-icon class="text-2xl" name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a class="inline-block hover:text-primary transition-colors" href="https://x.com/thisriyasingh">
-                <ion-icon class="text-2xl" name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-          </ul>
-
-          <p class="text-gray-400">Copyright &copy; <span class="year">2027</span></p>
-          <p class="text-gray-400">Riya Singh</p>
-          <p class="text-gray-400">All rights reserved.</p>
-        </div>
 
         <!-- Contact Column -->
         <div>
-          <p class="text-lg font-semibold mb-6">Contact Me</p>
+          <p class="text-lg font-semibold mb-6">Social Accounts</p>
           <address class="not-italic text-gray-400">
-            <p class="mb-4">
-              Bharati Vidyapeeth Deemed To Be University, College Of Engineering Pune.
-            </p>
-            <p>
-              <a class="text-primary hover:underline" href="#cta">Email</a>
-            </p> 
+            <p><a class="hover:text-primary" href="https://www.linkedin.com/in/riya-singh-8354b424a/">Linkedin</a></p> 
+            <p><a class="text-gray-400 hover:text-primary transition-colors" href="https://github.com/thisriya">Github</a></p>
+            <p><a class="text-gray-400 hover:text-primary transition-colors" href="https://www.geeksforgeeks.org/user/singhriyarirr0/">GeeksForGeeks</a></p>
           </address>
         </div>
 
         <!-- About Column -->
         <div>
-          <p class="text-lg font-semibold mb-6">MySelf</p>
+          <p class="text-lg font-semibold mb-6">Quick Links</p>
           <ul class="space-y-2">
             <li><a class="text-gray-400 hover:text-primary transition-colors" href="#intro">About Me</a></li>
-            <li><a class="text-gray-400 hover:text-primary transition-colors" href="https://github.com/thisriya">Github</a></li>
+             <li><a class="text-gray-400 hover:text-primary transition-colors" href="#projects">Mini Projects</a></li>
+               <li><a class="text-gray-400 hover:text-primary transition-colors" href="#education">Education</a></li>
+                 <li><a class="text-gray-400 hover:text-primary transition-colors" href="#python-projects">Python Projects</a></li>
+                 <li><a class="text-gray-400 hover:text-primary transition-colors" href="#experience">Experience</a></li>
           </ul>
         </div>
 
