@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Hello everyone, I am Riya Singh and This is my Portfolio."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Tailwind CSS via CDN (for demo purposes) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <title>Riya Singh (PORTFOLIO)</title>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#e67e22',
+              'primary-shade': '#cf711f',
+              'primary-tint': '#fdf2e9',
+              'secondary': '#6741d9',
+              'gray-light': '#767676',
+              'gray-dark': '#333',
+            },
+            fontFamily: {
+              rubik: ['Rubik', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="font-rubik text-gray-dark overflow-x-hidden">
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md py-6 px-4 md:px-0 z-50">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between">
+        <div class="text-2xl font-bold text-primary">Riya Singh</div>
+        
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center gap-8">
+          <li><a class="text-gray-dark font-medium hover:text-primary" href="#projects">My Websites</a></li>
+          <li><a class="text-gray-dark font-medium hover:text-primary" href="#education">Education</a></li>
+          <li><a class="text-gray-dark font-medium hover:text-primary" href="#python-projects">Python projects</a></li>
+          <li><a class="bg-primary hover:bg-primary-shade text-white px-6 py-3 rounded-full transition-colors duration-300" href="#cta">Send Me Email</a></li>
+        </ul>
+        
+        <!-- Mobile Navigation Button -->
+        <button class="md:hidden flex items-center" id="mobile-nav-btn">
+          <ion-icon class="text-3xl" name="menu-outline"></ion-icon>
+        </button>
+      </nav>
+      
+      <!-- Mobile Navigation Menu -->
+      <div class="hidden md:hidden absolute top-full left-0 w-full bg-white p-4 shadow-md" id="mobile-menu">
+        <ul class="flex flex-col gap-4">
+          <li><a class="block py-2 text-gray-dark font-medium hover:text-primary" href="#projects">My Websites</a></li>
+          <li><a class="block py-2 text-gray-dark font-medium hover:text-primary" href="#education">Education</a></li>
+          <li><a class="block py-2 text-gray-dark font-medium hover:text-primary" href="#python-projects">Python projects</a></li>
+          <li><a class="block py-2 bg-primary hover:bg-primary-shade text-white px-6 py-3 rounded-full transition-colors duration-300 text-center" href="#cta">Send Me Email</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="pt-28 pb-16 bg-primary-tint" id="intro">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+              Hello, I am Riya Singh
+            </h1>
+            <h1 class="text-4xl md:text-5xl font-bold mb-8 text-primary">
+              A Web Developer!
+            </h1>
+            
+            <div class="flex flex-wrap gap-4 mb-8">
+              <a href="#cta" class="bg-primary hover:bg-primary-shade text-white px-8 py-4 rounded-full transition-colors duration-300 font-semibold">Send me a Mail</a>
+              <a href="#projects" class="border-2 border-primary bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-full transition-colors duration-300 font-semibold">My Mini Projects &darr;</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+              <div class="flex -space-x-2">
+                <ion-icon class="text-3xl text-orange-500" name="logo-html5"></ion-icon>
+                <ion-icon class="text-3xl text-blue-500" name="logo-css3"></ion-icon>
+                <ion-icon class="text-3xl text-yellow-500" name="logo-javascript"></ion-icon>
+                <ion-icon class="text-3xl text-blue-700" name="logo-python"></ion-icon>
+                <img class="w-8 h-8 object-contain" src="sql.jpeg" alt="SQL Logo" /> 
+                <img class="w-8 h-8 object-contain" src="c++.jpeg" alt="c++ Logo" /> 
+              </div>
+              <p class="font-semibold">My Skills</p>
+            </div>
+          </div>
+          
+          <div class="relative order-first md:order-last">
+            <img 
+              src="me.jpg" 
+              class="w-full max-w-md mx-auto rounded-full shadow-xl"  
+              alt="My Photo" 
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume Section -->
+      <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <embed src="Riya Singh_Resume(WD).pdf" type="application/pdf" class="w-full h-96 md:h-screen mx-auto" />
+        </div>
+      </section>
+
+      <!-- Certificates Section -->
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+          <h2 class="text-3xl font-bold text-gray-dark mb-8">My Certificates</h2>
+          <div class="grid md:grid-cols-2 gap-4 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">Database Management System</div>
+            <div class="bg-white p-6 rounded-lg shadow-md">Python Boot-Camp</div>
+            <div class="bg-white p-6 rounded-lg shadow-md">Building A Responsive Website</div>
+            <div class="bg-white p-6 rounded-lg shadow-md">Python For AI Development</div>
+          </div>
+          
+          <h2 class="text-3xl font-bold text-gray-dark mb-8">Other Achievements</h2>
+          <div class="grid md:grid-cols-3 gap-4">
+            <div class="bg-white p-6 rounded-lg shadow-md">Solved 200+ Problems On GFG</div>
+            <div class="bg-white p-6 rounded-lg shadow-md">Creativity Head Of ITSA Club</div>
+            <div class="bg-white p-6 rounded-lg shadow-md">Member Of GDSC Club</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="py-16 bg-white" id="projects">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="text-center mb-12">
+            <span class="text-primary font-medium uppercase tracking-wide">Check Out My projects with quick links</span>
+            <h2 class="text-4xl font-bold mt-2">Description Of My Projects With Screenshots</h2>
+          </div>
+
+          <!-- Project 1 -->
+          <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <div class="inline-block text-xl font-bold text-primary-shade mb-2">01</div>
+              <h3 class="text-2xl font-bold mb-3">
+                Music Player <a href="https://thisriya.github.io/MUSIC-PLAYER/" class="text-blue-500 hover:underline">(Link)</a>
+              </h3>
+              <p class="text-gray-600">
+                In this project I have made a music player where user can play, pause, play next and previous songs.
+                <br>
+                <span class="font-medium">Skills: HTML, CSS, JAVASCRIPT</span>
+              </p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-xl">
+              <img
+                src="music_player.jpg"
+                class="w-full h-auto rounded-lg shadow-md"
+                alt="Screenshot of the project"
+              />
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div class="order-2 md:order-1 bg-gray-100 p-4 rounded-xl">
+              <img
+                src="to_do_list.jpg"
+                class="w-full h-auto rounded-lg shadow-md"
+                alt="Screenshot of the Project"
+              />
+            </div>
+            <div class="order-1 md:order-2">
+              <div class="inline-block text-xl font-bold text-primary-shade mb-2">02</div>
+              <h3 class="text-2xl font-bold mb-3">
+                To-Do List <a href="https://thisriya.github.io/ToDo_list/" class="text-blue-500 hover:underline">(Link)</a>
+              </h3>
+              <p class="text-gray-600">
+                In this project I have made a to-do list where user can enter their daily tasks and once done can delete it. It is stored until and unless user deletes its with the date of creation of task.
+                <br>
+                <span class="font-medium">Skills: HTML, CSS, JAVASCRIPT</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- More projects would continue in the same pattern -->
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="py-16 bg-gray-50" id="education">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="text-center mb-12">
+            <span class="text-primary font-medium uppercase tracking-wide">my education</span>
+            <h2 class="text-4xl font-bold mt-2">MY SCHOOL AND COLLEGE</h2>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- 10th Board -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="p-6">
+                <span class="inline-block px-3 py-1 text-xs font-semibold bg-blue-100 text-blue-800 rounded-full mb-4">1OTH BOARD</span>
+                <p class="text-xl font-bold mb-4">ARMY PUBLIC SCHOOL</p>
+                <div class="flex justify-between border-t pt-4">
+                  <p class="font-medium">GRADE</p>
+                  <p class="font-bold">92.4%</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 12th Board -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="p-6">
+                <span class="inline-block px-3 py-1 text-xs font-semibold bg-green-100 text-green-800 rounded-full mb-4">12TH BOARD</span>
+                <p class="text-xl font-bold mb-4">ARMY PUBLIC SCHOOL</p>
+                <div class="flex justify-between border-t pt-4">
+                  <p class="font-medium">GRADE</p>
+                  <p class="font-bold">93%</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- B.TECH -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="p-6">
+                <span class="inline-block px-3 py-1 text-xs font-semibold bg-purple-100 text-purple-800 rounded-full mb-4">B.TECH(IT)</span>
+                <p class="text-xl font-bold mb-4">BVP(DU)COEP</p>
+                <div class="flex justify-between border-t pt-4">
+                  <p class="font-medium">1ST YEAR</p>
+                  <p class="font-bold">9.62 CGPA</p>
+                </div>
+                <div class="flex justify-between border-t pt-4 mt-2">
+                  <p class="font-medium">2ND YEAR</p>
+                  <p class="font-bold">9.30 CGPA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Python Projects Section -->
+      <section class="py-16 bg-white" id="python-projects">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="text-center mb-12">
+            <span class="text-primary font-medium uppercase tracking-wide">PYTHON PROJECTS</span>
+            <h2 class="text-4xl font-bold mt-2">Have a Look At My Python Projects</h2>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- Project 1 -->
+            <div class="bg-gray-50 rounded-lg p-6 shadow-md">
+              <h3 class="text-xl font-bold text-primary mb-4">GOOGLE TRANSLATOR</h3>
+              <p class="text-gray-600">
+                This is a project that is made in python using tkinter for gui and few more modules where user enters a word and selects the language in which users wants to translates. This project translates One Language to another using Google translator.
+              </p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-gray-50 rounded-lg p-6 shadow-md">
+              <h3 class="text-xl font-bold text-primary mb-4">VOICE ASSISTENT</h3>
+              <p class="text-gray-600">
+                In this project I have made a Voice Assistent called "Nora" which gets activated when we call 'hey nora', further user can ask questions like "tell me about you", "projects are you", "projects old are you", "open youtube", "tell me a joke", "play a song" and it responds according to projects it is programmed.
+              </p>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-gray-50 rounded-lg p-6 shadow-md">
+              <h3 class="text-xl font-bold text-primary mb-4">DESKTOP NOTIFICATION</h3>
+              <p class="text-gray-600">
+                In this project the user gets a notification when this project is run to the desktop saying "Please Drink Water, We should always be hydrated as it helps us being healthy and fresh."
+              </p>
+            </div>
+
+            <!-- More Python projects would continue here -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+        <!-- Logo Column -->
+        <div>
+          <ul class="flex gap-4 mb-6">
+            <li>
+              <a class="inline-block hover:text-primary transition-colors" href="https://github.com/thisriya">
+                <img src="GitHub-Symbol.png" class="w-8 h-8 object-contain" alt="GitHub"/>
+              </a> 
+            </li> 
+            <li>
+              <a class="inline-block hover:text-primary transition-colors" href="https://www.linkedin.com/in/riya-singh-8354b424a">
+                <ion-icon class="text-2xl" name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="inline-block hover:text-primary transition-colors" href="https://x.com/thisriyasingh">
+                <ion-icon class="text-2xl" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <p class="text-gray-400">Copyright &copy; <span class="year">2027</span></p>
+          <p class="text-gray-400">Riya Singh</p>
+          <p class="text-gray-400">All rights reserved.</p>
+        </div>
+
+        <!-- Contact Column -->
+        <div>
+          <p class="text-lg font-semibold mb-6">Contact Me</p>
+          <address class="not-italic text-gray-400">
+            <p class="mb-4">
+              Bharati Vidyapeeth Deemed To Be University, College Of Engineering Pune.
+            </p>
+            <p>
+              <a class="text-primary hover:underline" href="#cta">Email</a>
+            </p> 
+          </address>
+        </div>
+
+        <!-- About Column -->
+        <div>
+          <p class="text-lg font-semibold mb-6">MySelf</p>
+          <ul class="space-y-2">
+            <li><a class="text-gray-400 hover:text-primary transition-colors" href="#intro">About Me</a></li>
+            <li><a class="text-gray-400 hover:text-primary transition-colors" href="https://github.com/thisriya">Github</a></li>
+          </ul>
+        </div>
+
+        <!-- Hobbies Column -->
+        <div>
+          <p class="text-lg font-semibold mb-6">Hobbies</p>
+          <ul class="space-y-2 text-gray-400">
+            <li>Knowing Facts</li>
+            <li>Playing Badminton</li>
+            <li>Watching Thriller Movies</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document.getElementById('mobile-nav-btn').addEventListener('click', function() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+        
+        // Toggle between menu and close icons
+        const icon = this.querySelector('ion-icon');
+        if (icon.name === 'menu-outline') {
+          icon.name = 'close-outline';
+        } else {
+          icon.name = 'menu-outline';
+        }
+      });
+      
+      // Update copyright year
+      document.querySelector('.year').textContent = new Date().getFullYear();
+      
+      // Form submission
+      async function registerUser() {
+        const name = document.querySelector('input[name="full-name"]').value;
+        const email = document.querySelector('input[name="email"]').value;
+        const message = document.querySelector('input[name="message"]').value;
+        
+        if(!name || !email || !message){
+          alert("please fill all details");
+          return;
+        }
+        try {
+          const response = await fetch('http://localhost:5500/register_user', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, message }),
+          });
+          
+          if (response.ok) {
+            alert("Thank You for Contacting! I will reply you soon.");
+          } else {
+            alert("Error: " + response.statusText);
+          }
+        } catch (error) {
+          alert("Error: " + error.message);
+        }
+      }
+    </script>
+  </body>
+</html>
